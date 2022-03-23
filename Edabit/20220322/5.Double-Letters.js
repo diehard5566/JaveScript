@@ -15,7 +15,7 @@ const doubleLetters = word => {
 
     //return /(\w)\1/.test(word)
 }
-
+clg
 
 
 console.log(doubleLetters("loop")) // true
