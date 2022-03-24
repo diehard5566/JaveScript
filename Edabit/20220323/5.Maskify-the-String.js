@@ -7,23 +7,23 @@
 // transforms all but the last four characters into "#" and returns the new masked string.
 
 const maskify = (str) => {
-  let last = str.substr(-4)
-  let pre = str.substr(0, str.length - 4)
-  let new1 = ''
+  let last = str.substr(-4);
+  let pre = str.substr(0, str.length - 4);
+  let new1 = "";
   for (let i = 0; i < pre.length; i++) {
-    new1 += '#'
+    new1 += "#";
   }
-  return new1 + last
+  return new1 + last;
 
   //return str.length > 4 ? '#'.repeat(str.length - 4) + str.substr(str.length - 4) : str; sorter ans
-}
+};
 
-maskify('4556364607935616') // "############5616"
+maskify("4556364607935616"); // "############5616"
 
-maskify('64607935616') // "#######5616"
+maskify("64607935616"); // "#######5616"
 
-maskify('1') // "1"
+maskify("1"); // "1"
 
-maskify('') // ""
+maskify(""); // ""
 
-maskify('12345')
+maskify("12345");
