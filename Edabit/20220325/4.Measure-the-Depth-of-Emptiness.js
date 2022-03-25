@@ -7,9 +7,8 @@
 // Your goal is to measure the depth of this array, where [] has a depth 1, [[]] has depth of 2,
 // [[[]]] has depth 3, etc.
 
-const measureDepth = arr => {
-    console.log()
-}
+const measureDepth = arr =>  JSON.stringify(arr).length / 2
+
 
 measureDepth([]) // 1
 
