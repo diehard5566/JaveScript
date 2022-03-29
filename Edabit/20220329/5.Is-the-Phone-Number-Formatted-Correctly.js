@@ -7,6 +7,8 @@
 
 const isValidPhoneNumber = str => str[0] === '(' && str[4] === ')' && str[5] === ' ' && str[str.length - 5] === '-'
 
+//	return /^\(\d{3}\) \d{3}-\d{4}$/.test(str);
+
 isValidPhoneNumber('(123) 456-7890') // true
 
 isValidPhoneNumber('1111)555 2345') // false
