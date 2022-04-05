@@ -14,16 +14,16 @@
 
 const collatz = num => {
     let count = 0
-    do {
+    while (num > 1) {
         if (num % 2 === 0) {
-            num / 2
+            num = num / 2
             count++
         } else {
-            num * 3 + 1
+            num = num * 3 + 1
             count++
         }
-    } while (num <= 1)
-    count
+    }
+    return count
 }
 console.log(collatz(2))
 // 1
