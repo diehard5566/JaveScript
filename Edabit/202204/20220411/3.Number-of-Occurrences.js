@@ -31,10 +31,10 @@ const countNumberOfOccurrences = obj => {
     x
     for (let i = 0; i < x.length; i++) {
         newo
-        if (newo[x[i]] == null) {
-            newo[x[i]] = 1
-        } else {
+        if (newo[x[i]]) {
             newo[x[i]]++
+        } else {
+            newo[x[i]] = 1
         }
         newo
     }
